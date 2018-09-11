@@ -17,7 +17,7 @@ X = data.iloc[:, :-1].values # all rows except last
 
 Y = data.iloc[:, 3].values # all rows of 3rd column
 
-# Taking care of nan values
+# Taking care of missing values
 
 from sklearn.preprocessing import Imputer
 imputer = Imputer(missing_values="NaN", strategy="mean", axis=0)
