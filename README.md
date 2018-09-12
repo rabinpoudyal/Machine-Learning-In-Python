@@ -45,6 +45,11 @@ Steps in Simple Linear Regression:
 #### Support Vector Regression
 - Based on support vector machine
 - Needs to feature scale before applying regression
-- kernel = elf
+- kernel = elf (same as polynomial regression)
 - Finds outliers as well 
 
+#### Decision Tree Regression (Non Linear and non-continuous regression model)
+- CART (Classification Tree and Regression Tree)
+- Break down datasets into different leaves and find mean of the leaves to predict value that lies in that leaf
+- Very powerful model for multi dimensional models
+- Must be careful while plotting a graph because we are visualizing the non continuous model
