@@ -41,3 +41,10 @@ Steps in Simple Linear Regression:
 - Sometimes it fits best among other regression like diseases spread or others
 - Fits the dataset perfectly as we increase the degree of polynomial
 - First transform into polynomial features and then perform multiple linear regression
+
+#### Support Vector Regression
+- Based on support vector machine
+- Needs to feature scale before applying regression
+- kernel = elf
+- Finds outliers as well 
+
