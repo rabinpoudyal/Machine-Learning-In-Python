@@ -34,3 +34,10 @@ Steps in Simple Linear Regression:
 - Set the significance level eg 5%
 - Compute p-value of the variables if it is greater than 0.05 remove variable and fit again
 - Continue the process till we have most significant variables left
+
+#### Ploynomial Linear Regression:
+- x = b0 + b1*x1^2 + b2*x2^3 + b3*x3^4
+- It is still linear because we are talking about coefficients b0,b1,b2 not variable itself
+- Sometimes it fits best among other regression like diseases spread or others
+- Fits the dataset perfectly as we increase the degree of polynomial
+- First transform into polynomial features and then perform multiple linear regression
