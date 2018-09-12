@@ -48,3 +48,45 @@ regressor.fit(X_train, Y_train)
 # Predict for the test set
 
 Y_predicted = regressor.predict(X_test)
+
+# Building an optimal model using backward elimination method
+
+import statsmodels.formula.api as sm
+
+# Now you need to add column of ones in the matrix X because this sm library
+# does not take care of it and in our model x0b0 + x1b1 + x2b2 +... we dont
+# have a b0 matrix
+
+X = np.append(arr=np.ones((50,1)).astype(int), values=X, axis=1)
+X_optimal = X[:, [0,1,2,3,4,5]] # Writing all columns specifically because we need to remove later
+# Fit the Ordinary Least Square regressor model
+regressor_OLS = sm.OLS(endog=Y, exog=X_optimal).fit()
+regressor_OLS.summary()
+
+# We can see that variable x2 has significance level higher than 5% so remove it
+
+X_optimal = X[:, [0,1,3,4,5]] # Writing all columns specifically because we need to remove later
+# Fit the Ordinary Least Square regressor model
+regressor_OLS = sm.OLS(endog=Y, exog=X_optimal).fit()
+regressor_OLS.summary()
+
+# Varialbe x1 still has p value higher than 0.05(5%) so remove it
+X_optimal = X[:, [0,3,4,5]] # Writing all columns specifically because we need to remove later
+# Fit the Ordinary Least Square regressor model
+regressor_OLS = sm.OLS(endog=Y, exog=X_optimal).fit()
+regressor_OLS.summary()
+
+# Varialbe x2 still has p value higher than 0.05(5%) so remove it
+X_optimal = X[:, [0,3,5]] # Writing all columns specifically because we need to remove later
+# Fit the Ordinary Least Square regressor model
+regressor_OLS = sm.OLS(endog=Y, exog=X_optimal).fit()
+regressor_OLS.summary()
+
+# Varialbe x2 still has p value higher than 0.05(5%) so remove it
+X_optimal = X[:, [0,3]] # Writing all columns specifically because we need to remove later
+# Fit the Ordinary Least Square regressor model
+regressor_OLS = sm.OLS(endog=Y, exog=X_optimal).fit()
+regressor_OLS.summary()
+
+# So we conclude that the 3rd column is the most significant estimator of 
+# profit and it is R and D spent column

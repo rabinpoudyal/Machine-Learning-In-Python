@@ -28,4 +28,9 @@ Steps in Simple Linear Regression:
 
 #### Multiple Linear Regression:
 - x = b0 + b1*x1 + b2*x2 ...
-- 
+- Perform linear regression like above but how do you know your model is most optimized model?
+- Implement backward elimination algorithm to find the most significant predictors of outcome 
+- First fit the regression with all independent variables
+- Set the significance level eg 5%
+- Compute p-value of the variables if it is greater than 0.05 remove variable and fit again
+- Continue the process till we have most significant variables left
