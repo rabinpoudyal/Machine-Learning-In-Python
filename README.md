@@ -53,3 +53,15 @@ Steps in Simple Linear Regression:
 - Break down datasets into different leaves and find mean of the leaves to predict value that lies in that leaf
 - Very powerful model for multi dimensional models
 - Must be careful while plotting a graph because we are visualizing the non continuous model
+
+#### Random Forest Regression
+- Ensamble Learning Method
+- Pick n number of points randomly from dataset
+- Build a decision tree
+- Build N decision trees
+- We will have N number of predictions from those trees
+- Calculate the average of those predictions and it will be our final prediction
+- Ensmble learning is powerful because it does not get affected by change in dataset
+- Increasing tree will first create more steps but slowly converge and starts choosing the best point of the stairs instead of creating more staris
+
+
