@@ -64,4 +64,16 @@ Steps in Simple Linear Regression:
 - Ensmble learning is powerful because it does not get affected by change in dataset
 - Increasing tree will first create more steps but slowly converge and starts choosing the best point of the stairs instead of creating more staris
 
+## Section three: Classification
+- When we have discrete output and not continuous like cancer patient or not?
+
+#### Logistic Regression
+- Like regression but we model the output as probabilities b/w 0 and 1 instead of continuous values
+- Converting our linear regression model to logistic regression model takes following steps:
+- y = b0 + b1x
+- If we apply sigmoid function to above y in the eqn => p = (1/(1+e^-y))
+- And we solve for y then
+- ln(p/(1-p)) = b0 + b1x
+- Which is the logistic regression. 
+- By applying sigmoid, the function will not go higher than 1 and below 0
 
