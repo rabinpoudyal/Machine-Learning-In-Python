@@ -67,7 +67,7 @@ Steps in Simple Linear Regression:
 ## Section three: Classification
 - When we have discrete output and not continuous like cancer patient or not?
 
-#### Logistic Regression
+#### Logistic Regression (Linear Classifier)
 - Like regression but we model the output as probabilities b/w 0 and 1 instead of continuous values
 - Converting our linear regression model to logistic regression model takes following steps:
 - y = b0 + b1x
@@ -77,3 +77,7 @@ Steps in Simple Linear Regression:
 - Which is the logistic regression. 
 - By applying sigmoid, the function will not go higher than 1 and below 0
 
+#### K-nearest Neighbours Classification (Non linear Classifier)
+- Take k = n as a number of nearest neighbours for point k which we want to classify
+- Count the number of points that fall on each category of neighbours
+- The point k will fall into the category that has maximum number of neighbours
