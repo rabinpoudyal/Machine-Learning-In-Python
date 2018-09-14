@@ -81,3 +81,12 @@ Steps in Simple Linear Regression:
 - Take k = n as a number of nearest neighbours for point k which we want to classify
 - Count the number of points that fall on each category of neighbours
 - The point k will fall into the category that has maximum number of neighbours
+
+#### Support Vector Machine
+- We can draw many lines between the two classes.
+- Find the best optimal line that separates two different classes.
+- It is a  linear classifier
+- Finding the best decision boundary is based on support vectors(those extreme datas of each classes)
+- The line is drawn equidistant from those support vectors and the best decision boundary is based on maximum distance between the support distance and the hyperplane
+- Support vectors in apple and orange classifier => The worst apple that looks like orange and worst orange that looks like an apple
+- The decision boundary is called maximum length hyperplane/classifier
