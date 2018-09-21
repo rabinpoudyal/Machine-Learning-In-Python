@@ -81,6 +81,13 @@ Steps in Simple Linear Regression:
 - Take k = n as a number of nearest neighbours for point k which we want to classify
 - Count the number of points that fall on each category of neighbours
 - The point k will fall into the category that has maximum number of neighbours
+- How to choose the best n_clusters?
+- WCSS is the metric that is used to choose best cluster. It is based on euclidean distance and we try to increase the inter-cluster distance and minimize the intra-cluster distance. When we plot this in graph, it will yield the elbow. And we choose that elbow as the optimum number of cluster
+
+#### Hierarchial Clustering
+- This method is used when we are not sure how many clusters we want in our dataset. 
+- We construct the dendogram from the given dataset.
+- We count the number of vertical lines that do not intersect any horizontal corresponding line.
 
 #### Support Vector Machine
 - We can draw many lines between the two classes.
@@ -90,3 +97,10 @@ Steps in Simple Linear Regression:
 - The line is drawn equidistant from those support vectors and the best decision boundary is based on maximum distance between the support distance and the hyperplane
 - Support vectors in apple and orange classifier => The worst apple that looks like orange and worst orange that looks like an apple
 - The decision boundary is called maximum length hyperplane/classifier
+
+## Section Four: Natural Language Processing
+- Get the raw text data from various sources.
+- Perform text cleaning - tokenization, lemminization, stemming, vectorizing.
+- Feed the data into the proper algorithm
+- Evalute the alternatives
+- Select the best model
