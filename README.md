@@ -104,3 +104,7 @@ Steps in Simple Linear Regression:
 - Feed the data into the proper algorithm
 - Evalute the alternatives
 - Select the best model
+
+## Section Five: XGBoost
+- 3 Advantages:- High performance when dataset is huge, fast execution and we can keep all the interpretation of problem( i.e we dont need to apply feature scaling)
+- No feature scaling because this model is based on decision trees
